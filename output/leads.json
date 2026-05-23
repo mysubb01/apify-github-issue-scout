@@ -1,0 +1,357 @@
+[
+  {
+    "query": "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "tianmind-studio/expert-review-panel",
+    "title": "Good first issue: add one new eval case for a realistic review scenario",
+    "url": "https://github.com/tianmind-studio/expert-review-panel/issues/4",
+    "comments": 4,
+    "labels": [
+      "documentation",
+      "help wanted",
+      "good first issue"
+    ],
+    "updatedAt": "2026-05-23T00:48:48Z",
+    "score": 20,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:documentation",
+      "label:help wanted",
+      "label:good first issue"
+    ],
+    "riskSignals": [],
+    "verdict": "review"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "logos-co/rfp",
+    "title": "#Proposal: RFP-003 — Atomic Swaps (BTC + XMR extension)",
+    "url": "https://github.com/logos-co/rfp/issues/51",
+    "comments": 2,
+    "labels": [
+      "proposal"
+    ],
+    "updatedAt": "2026-05-23T11:45:12Z",
+    "score": 23,
+    "rewardSignal": "$10,000",
+    "positiveSignals": [
+      "reward:$10,000",
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "orchestration-agent/AgentOrchestration",
+    "title": "[ Bounty $4k ] [ API ] Prevent partial batch update success masking failures — agent config API",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2807",
+    "comments": 5,
+    "labels": [
+      "bug",
+      "good first issue",
+      "help wanted",
+      "bounty",
+      "crypto-eligible",
+      "high-value",
+      "💎 Bounty",
+      "$4k"
+    ],
+    "updatedAt": "2026-05-23T08:18:18Z",
+    "score": 20,
+    "rewardSignal": "$4k",
+    "positiveSignals": [
+      "reward:$4k",
+      "label:good first issue",
+      "label:help wanted",
+      "label:bounty",
+      "label:💎 Bounty",
+      "paid-work-language"
+    ],
+    "riskSignals": [
+      "star-gated",
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "orchestration-agent/AgentOrchestration",
+    "title": "[ Bounty $5k ] [ Sandbox ] Enforce disk_mb or remove the option — resource limits",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2799",
+    "comments": 5,
+    "labels": [
+      "bug",
+      "good first issue",
+      "help wanted",
+      "bounty",
+      "crypto-eligible",
+      "high-value",
+      "💎 Bounty",
+      "$5k"
+    ],
+    "updatedAt": "2026-05-23T04:49:01Z",
+    "score": 20,
+    "rewardSignal": "$5k",
+    "positiveSignals": [
+      "reward:$5k",
+      "label:good first issue",
+      "label:help wanted",
+      "label:bounty",
+      "label:💎 Bounty",
+      "paid-work-language"
+    ],
+    "riskSignals": [
+      "star-gated",
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "godzillaqwa/Wylie-National-Bank",
+    "title": "help wanted",
+    "url": "https://github.com/godzillaqwa/Wylie-National-Bank/issues/3",
+    "comments": 0,
+    "labels": [
+      "documentation",
+      "help wanted"
+    ],
+    "updatedAt": "2026-05-23T07:38:30Z",
+    "score": 8,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:documentation",
+      "label:help wanted",
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "Scottcjn/Rustchain",
+    "title": "Hall of Rust endpoints accept non-object JSON bodies",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/6134",
+    "comments": 1,
+    "labels": [],
+    "updatedAt": "2026-05-23T07:57:56Z",
+    "score": 7,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "low-comment-count"
+    ],
+    "riskSignals": [],
+    "verdict": "skip"
+  },
+  {
+    "query": "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "Scottcjn/Rustchain",
+    "title": "[SECURITY] RustChain CLI miners command crashes on current /api/miners envelope",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/6121",
+    "comments": 1,
+    "labels": [],
+    "updatedAt": "2026-05-22T23:01:00Z",
+    "score": 7,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "low-comment-count"
+    ],
+    "riskSignals": [],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "webcamoid/webcamoid",
+    "title": "AkVCamTestMF freezes and Virtual Camera not recognized on Windows 11 (x64)",
+    "url": "https://github.com/webcamoid/webcamoid/issues/784",
+    "comments": 7,
+    "labels": [
+      "Critical: Bug",
+      "Platform: Windows"
+    ],
+    "updatedAt": "2026-05-23T11:40:56Z",
+    "score": 1,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "paid-work-language"
+    ],
+    "riskSignals": [],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "wraith-protocol/sdk",
+    "title": "Stellar custom-asset (issued token) send builder",
+    "url": "https://github.com/wraith-protocol/sdk/issues/7",
+    "comments": 1,
+    "labels": [
+      "help wanted",
+      "Stellar Wave",
+      "stellar",
+      "drips",
+      "feature"
+    ],
+    "updatedAt": "2026-05-23T04:42:23Z",
+    "score": -1,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:help wanted",
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "wraith-protocol/docs",
+    "title": "Spectre + Stellar agent cookbook",
+    "url": "https://github.com/wraith-protocol/docs/issues/8",
+    "comments": 1,
+    "labels": [
+      "help wanted",
+      "Stellar Wave",
+      "stellar",
+      "drips",
+      "docs"
+    ],
+    "updatedAt": "2026-05-23T04:42:20Z",
+    "score": -1,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:help wanted",
+      "label:docs",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "wraith-protocol/www",
+    "title": "Dynamic Open Graph image generator",
+    "url": "https://github.com/wraith-protocol/www/issues/7",
+    "comments": 1,
+    "labels": [
+      "help wanted",
+      "Stellar Wave",
+      "drips",
+      "feature",
+      "design",
+      "seo"
+    ],
+    "updatedAt": "2026-05-23T04:42:25Z",
+    "score": -9,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:help wanted",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
+    "repo": "wraith-protocol/contracts",
+    "title": "Soroban resource budget profiling & optimization report",
+    "url": "https://github.com/wraith-protocol/contracts/issues/6",
+    "comments": 1,
+    "labels": [
+      "help wanted",
+      "Stellar Wave",
+      "stellar",
+      "audit",
+      "drips",
+      "perf"
+    ],
+    "updatedAt": "2026-05-23T04:42:21Z",
+    "score": -9,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "label:help wanted",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "asaadnashed/bounty-autopilot",
+    "title": "Bounty scout candidates",
+    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/1",
+    "comments": 6,
+    "labels": [],
+    "updatedAt": "2026-05-23T11:43:36Z",
+    "score": -13,
+    "rewardSignal": "$3k",
+    "positiveSignals": [
+      "reward:$3k",
+      "paid-work-language"
+    ],
+    "riskSignals": [
+      "crypto-or-token-work",
+      "agent-generated-noise"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "asaadnashed/bounty-autopilot",
+    "title": "TaskBounty candidates",
+    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/2",
+    "comments": 12,
+    "labels": [],
+    "updatedAt": "2026-05-23T11:41:08Z",
+    "score": -44,
+    "rewardSignal": "$10.00",
+    "positiveSignals": [
+      "reward:$10.00",
+      "paid-work-language"
+    ],
+    "riskSignals": [
+      "reward-too-small",
+      "comment-count-high"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "onehumancorp/mono",
+    "title": "Tool Integration Research Report - Q3",
+    "url": "https://github.com/onehumancorp/mono/issues/7412",
+    "comments": 0,
+    "labels": [
+      "agent-report",
+      "discovery",
+      "agent-in-progress"
+    ],
+    "updatedAt": "2026-05-23T11:03:30Z",
+    "score": -48,
+    "rewardSignal": "$0.01",
+    "positiveSignals": [
+      "reward:$0.01",
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "reward-too-small",
+      "crypto-or-token-work",
+      "agent-generated-noise"
+    ],
+    "verdict": "skip"
+  }
+]

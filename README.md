@@ -1,0 +1,76 @@
+# GitHub Issue Scout for Paid-Work Triage
+
+This is a small Crawlee demo for finding public GitHub issues that may be worth human review before doing paid open-source work.
+
+The goal is not to auto-comment or auto-claim bounties. The crawler collects public GitHub issue search results, extracts paid-work signals, flags risky patterns, and writes a ranked JSON shortlist that a human can inspect.
+
+It was built as a working-code companion for an Apify/Crawlee technical article pitch.
+
+## Why This Demo Exists
+
+Public bounty searches are noisy. A result can look valuable but still be a bad target because it is maintainer-only, core-team-only, already crowded, star-gated, or full of low-quality AI attempts.
+
+This demo turns that lesson into a practical workflow:
+
+- Collect issue candidates with Crawlee.
+- Keep only structured public metadata.
+- Score positive signals like reward text, helpful labels, and low comment count.
+- Flag risk signals before spending engineering time.
+- Produce a reviewable JSON artifact instead of posting spam.
+
+## Run It
+
+```bash
+npm install
+npm run demo
+```
+
+The default output is:
+
+```text
+output/leads.json
+```
+
+You can provide your own query:
+
+```bash
+npm start -- --query 'bounty "good first issue" state:open comments:<10 updated:>2026-04-01' --limit 10 --output output/custom-leads.json
+```
+
+Tip: add `is:issue` to GitHub search queries when you want to exclude pull requests from the result set.
+
+## Output Shape
+
+Each lead includes:
+
+- `repo`
+- `title`
+- `url`
+- `comments`
+- `labels`
+- `score`
+- `rewardSignal`
+- `positiveSignals`
+- `riskSignals`
+- `verdict`
+
+Verdicts:
+
+- `pursue`: worth opening manually and reproducing locally
+- `review`: unclear, inspect before touching code
+- `skip`: likely poor expected value
+
+## Safety Rules
+
+- Do not auto-comment on GitHub issues.
+- Do not claim a bounty until you have reproduced the issue and checked maintainer eligibility.
+- Skip issues that are maintainer-only, core-team-only, star-gated, or already crowded.
+- Treat this as a lead-scoring assistant, not an autonomous bounty hunter.
+
+## Article Angle
+
+This demo is designed as the working example for an Apify/Crawlee technical article:
+
+> Building a GitHub Issue Scout with Crawlee and Human-in-the-Loop Triage
+
+The article would walk through building the crawler, designing the scoring rules, and avoiding the common trap of wasting time on noisy or low-trust bounty issues.

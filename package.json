@@ -1,0 +1,24 @@
+{
+  "name": "apify-github-issue-scout",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Crawlee demo that scouts GitHub issues for paid-work signals and filters noisy bounty traps.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build --silent && node dist/scout.js",
+    "demo": "npm run build --silent && node dist/scout.js --limit 5 --output output/leads.json"
+  },
+  "dependencies": {
+    "@crawlee/cheerio": "3.10.1",
+    "@crawlee/core": "3.10.1"
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.12",
+    "got-scraping": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
