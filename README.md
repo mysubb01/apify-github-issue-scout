@@ -12,6 +12,7 @@ Related writing assets:
 - [Paid services](https://mysubb01.github.io/apify-github-issue-scout/services.html)
 - [Case study](https://mysubb01.github.io/apify-github-issue-scout/case-study.html)
 - [Outreach kit](https://mysubb01.github.io/apify-github-issue-scout/outreach-kit.html)
+- [Actor Store listing packet](./ACTOR_STORE_LISTING.md)
 - [Article draft](./article-draft.md)
 - [Article pitch](./article-pitch.md)
 
