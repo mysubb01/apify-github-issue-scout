@@ -11,6 +11,7 @@ Related writing assets:
 - [Portfolio page](https://mysubb01.github.io/apify-github-issue-scout/)
 - [Paid services](https://mysubb01.github.io/apify-github-issue-scout/services.html)
 - [Case study](https://mysubb01.github.io/apify-github-issue-scout/case-study.html)
+- [Outreach kit](https://mysubb01.github.io/apify-github-issue-scout/outreach-kit.html)
 - [Article draft](./article-draft.md)
 - [Article pitch](./article-pitch.md)
 
