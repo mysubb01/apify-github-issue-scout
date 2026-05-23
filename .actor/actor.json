@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "github-issue-scout",
+  "title": "GitHub Issue Scout",
+  "description": "Scout public GitHub issues for paid-work signals and filter noisy bounty traps before human review.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "input": "./input_schema.json"
+}

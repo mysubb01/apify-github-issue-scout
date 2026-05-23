@@ -166,25 +166,6 @@
     "verdict": "skip"
   },
   {
-    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
-    "repo": "webcamoid/webcamoid",
-    "title": "AkVCamTestMF freezes and Virtual Camera not recognized on Windows 11 (x64)",
-    "url": "https://github.com/webcamoid/webcamoid/issues/784",
-    "comments": 7,
-    "labels": [
-      "Critical: Bug",
-      "Platform: Windows"
-    ],
-    "updatedAt": "2026-05-23T11:40:56Z",
-    "score": 1,
-    "rewardSignal": null,
-    "positiveSignals": [
-      "paid-work-language"
-    ],
-    "riskSignals": [],
-    "verdict": "skip"
-  },
-  {
     "query": "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01",
     "repo": "wraith-protocol/sdk",
     "title": "Stellar custom-asset (issued token) send builder",
@@ -310,21 +291,24 @@
   },
   {
     "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
-    "repo": "asaadnashed/bounty-autopilot",
-    "title": "TaskBounty candidates",
-    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/2",
-    "comments": 12,
-    "labels": [],
-    "updatedAt": "2026-05-23T11:41:08Z",
-    "score": -44,
-    "rewardSignal": "$10.00",
+    "repo": "onehumancorp/mono",
+    "title": "Social Media Integration Research",
+    "url": "https://github.com/onehumancorp/mono/issues/11964",
+    "comments": 1,
+    "labels": [
+      "agent-in-progress"
+    ],
+    "updatedAt": "2026-05-23T12:03:13Z",
+    "score": -25,
+    "rewardSignal": "$19",
     "positiveSignals": [
-      "reward:$10.00",
-      "paid-work-language"
+      "reward:$19",
+      "paid-work-language",
+      "low-comment-count"
     ],
     "riskSignals": [
       "reward-too-small",
-      "comment-count-high"
+      "agent-generated-noise"
     ],
     "verdict": "skip"
   },
@@ -336,14 +320,37 @@
     "comments": 0,
     "labels": [
       "agent-report",
-      "discovery",
-      "agent-in-progress"
+      "discovery"
     ],
-    "updatedAt": "2026-05-23T11:03:30Z",
+    "updatedAt": "2026-05-23T11:57:43Z",
     "score": -48,
     "rewardSignal": "$0.01",
     "positiveSignals": [
       "reward:$0.01",
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [
+      "reward-too-small",
+      "crypto-or-token-work",
+      "agent-generated-noise"
+    ],
+    "verdict": "skip"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "onehumancorp/mono",
+    "title": "Chatwoot Integration",
+    "url": "https://github.com/onehumancorp/mono/issues/11951",
+    "comments": 1,
+    "labels": [
+      "agent-in-progress"
+    ],
+    "updatedAt": "2026-05-23T12:03:13Z",
+    "score": -49,
+    "rewardSignal": "$19",
+    "positiveSignals": [
+      "reward:$19",
       "paid-work-language",
       "low-comment-count"
     ],

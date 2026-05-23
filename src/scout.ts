@@ -45,7 +45,13 @@ type CliOptions = {
   queries: string[];
 };
 
-const DEFAULT_QUERIES = [
+type ScanOptions = {
+  limit: number;
+  queries: string[];
+  pushToCrawleeDataset?: boolean;
+};
+
+export const DEFAULT_QUERIES = [
   'bounty "good first issue" is:issue state:open comments:<10 updated:>2026-04-01',
   '"paid" "documentation" is:issue state:open comments:<15 updated:>2026-01-01',
   '"reward" "help wanted" is:issue state:open comments:<10 updated:>2026-04-01',
@@ -324,8 +330,7 @@ async function writeOutput(outputPath: string, leads: Lead[]): Promise<void> {
   await writeFile(resolved, `${JSON.stringify(leads, null, 2)}\n`, 'utf8');
 }
 
-async function main(): Promise<void> {
-  const options = parseArgs(process.argv.slice(2));
+export async function scanIssues(options: ScanOptions): Promise<Lead[]> {
   const perPage = Math.min(options.limit, 30);
   const leads: Lead[] = [];
 
@@ -340,12 +345,14 @@ async function main(): Promise<void> {
       const classified = response.items.map((issue) => classifyIssue(issue, query));
       leads.push(...classified);
 
-      await pushData(
-        classified.map((lead) => ({
-          ...lead,
-          scannedAt: new Date().toISOString(),
-        })),
-      );
+      if (options.pushToCrawleeDataset) {
+        await pushData(
+          classified.map((lead) => ({
+            ...lead,
+            scannedAt: new Date().toISOString(),
+          })),
+        );
+      }
     },
     failedRequestHandler({ request, log }) {
       log.error(`Failed to scan ${request.url}`);
@@ -368,9 +375,18 @@ async function main(): Promise<void> {
     review: 2,
     skip: 1,
   };
-  const ranked = leads.sort((left, right) => {
+  return leads.sort((left, right) => {
     const verdictDelta = verdictRank[right.verdict] - verdictRank[left.verdict];
     return verdictDelta === 0 ? right.score - left.score : verdictDelta;
+  });
+}
+
+async function main(): Promise<void> {
+  const options = parseArgs(process.argv.slice(2));
+  const ranked = await scanIssues({
+    limit: options.limit,
+    queries: options.queries,
+    pushToCrawleeDataset: true,
   });
   await writeOutput(options.output, ranked);
 
@@ -382,4 +398,6 @@ async function main(): Promise<void> {
   console.log(`Crawlee dataset contains ${total} records.`);
 }
 
-await main();
+if (import.meta.url === new URL(process.argv[1], 'file:').href) {
+  await main();
+}

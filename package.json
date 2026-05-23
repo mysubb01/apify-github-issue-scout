@@ -7,15 +7,16 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "npm run build --silent && node dist/scout.js",
-    "demo": "npm run build --silent && node dist/scout.js --limit 5 --output output/leads.json"
+    "demo": "npm run build --silent && node dist/scout.js --limit 5 --output output/leads.json",
+    "actor:local": "npm run build --silent && APIFY_LOCAL_STORAGE_DIR=./storage node dist/actor.js"
   },
   "dependencies": {
-    "@crawlee/cheerio": "3.10.1",
-    "@crawlee/core": "3.10.1"
+    "@crawlee/cheerio": "3.16.0",
+    "@crawlee/core": "3.16.0",
+    "apify": "^3.7.2"
   },
   "overrides": {
-    "cheerio": "1.0.0-rc.12",
-    "got-scraping": "4.0.0"
+    "cheerio": "1.0.0-rc.12"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

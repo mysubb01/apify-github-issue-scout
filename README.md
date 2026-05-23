@@ -39,6 +39,35 @@ npm start -- --query 'bounty "good first issue" state:open comments:<10 updated:
 
 Tip: add `is:issue` to GitHub search queries when you want to exclude pull requests from the result set.
 
+## Run as an Apify Actor Locally
+
+The repository also includes an Apify Actor adapter:
+
+- `.actor/actor.json`
+- `.actor/input_schema.json`
+- `Dockerfile`
+- `src/actor.ts`
+
+Run the Actor locally:
+
+```bash
+npm install
+npm run actor:local
+```
+
+Local Actor output is written to Apify-compatible storage:
+
+```text
+storage/key_value_stores/default/OUTPUT.json
+storage/datasets/default/*.json
+```
+
+The Actor version accepts:
+
+- `queries`: GitHub issue search queries
+- `limit`: max results per query, capped at 30
+- `outputKey`: key-value store key for the summary object
+
 ## Output Shape
 
 Each lead includes:
@@ -74,3 +103,5 @@ This demo is designed as the working example for an Apify/Crawlee technical arti
 > Building a GitHub Issue Scout with Crawlee and Human-in-the-Loop Triage
 
 The article would walk through building the crawler, designing the scoring rules, and avoiding the common trap of wasting time on noisy or low-trust bounty issues.
+
+Because it is Actor-ready, the article can also include a final section on turning the script into a reusable Apify Actor.

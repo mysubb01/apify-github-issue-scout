@@ -1,0 +1,41 @@
+{
+  "title": "GitHub Issue Scout input",
+  "description": "Configure public GitHub issue search queries and lead limits.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "queries": {
+      "title": "GitHub search queries",
+      "description": "GitHub issue search queries. Add is:issue to avoid pull requests.",
+      "type": "array",
+      "editor": "stringList",
+      "prefill": [
+        "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+        "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+        "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01"
+      ],
+      "default": [
+        "bounty \"good first issue\" is:issue state:open comments:<10 updated:>2026-04-01",
+        "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+        "\"reward\" \"help wanted\" is:issue state:open comments:<10 updated:>2026-04-01"
+      ]
+    },
+    "limit": {
+      "title": "Results per query",
+      "description": "Maximum GitHub results to inspect per query. Kept small to avoid unnecessary API load.",
+      "type": "integer",
+      "editor": "number",
+      "minimum": 1,
+      "maximum": 30,
+      "default": 10
+    },
+    "outputKey": {
+      "title": "Summary output key",
+      "description": "Key-value store key for the summary object.",
+      "type": "string",
+      "editor": "textfield",
+      "default": "OUTPUT"
+    }
+  },
+  "required": ["queries", "limit"]
+}
