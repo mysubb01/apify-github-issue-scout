@@ -6,6 +6,11 @@ The goal is not to auto-comment or auto-claim bounties. The crawler collects pub
 
 It was built as a working-code companion for an Apify/Crawlee technical article pitch.
 
+Related writing assets:
+
+- [Article draft](./article-draft.md)
+- [Article pitch](./article-pitch.md)
+
 ## Why This Demo Exists
 
 Public bounty searches are noisy. A result can look valuable but still be a bad target because it is maintainer-only, core-team-only, already crowded, star-gated, or full of low-quality AI attempts.

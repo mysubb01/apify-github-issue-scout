@@ -23,6 +23,27 @@
   },
   {
     "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
+    "repo": "fleetdm/fleet",
+    "title": "Resolve fleet.MDMPlatform / fleet.MDMSupported Android ambiguity",
+    "url": "https://github.com/fleetdm/fleet/issues/46118",
+    "comments": 0,
+    "labels": [
+      "story",
+      "~engineering-initiated",
+      "#g-power-to-pc"
+    ],
+    "updatedAt": "2026-05-23T12:04:07Z",
+    "score": 16,
+    "rewardSignal": null,
+    "positiveSignals": [
+      "paid-work-language",
+      "low-comment-count"
+    ],
+    "riskSignals": [],
+    "verdict": "review"
+  },
+  {
+    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
     "repo": "logos-co/rfp",
     "title": "#Proposal: RFP-003 — Atomic Swaps (BTC + XMR extension)",
     "url": "https://github.com/logos-co/rfp/issues/51",
@@ -266,26 +287,6 @@
     ],
     "riskSignals": [
       "crypto-or-token-work"
-    ],
-    "verdict": "skip"
-  },
-  {
-    "query": "\"paid\" \"documentation\" is:issue state:open comments:<15 updated:>2026-01-01",
-    "repo": "asaadnashed/bounty-autopilot",
-    "title": "Bounty scout candidates",
-    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/1",
-    "comments": 6,
-    "labels": [],
-    "updatedAt": "2026-05-23T11:43:36Z",
-    "score": -13,
-    "rewardSignal": "$3k",
-    "positiveSignals": [
-      "reward:$3k",
-      "paid-work-language"
-    ],
-    "riskSignals": [
-      "crypto-or-token-work",
-      "agent-generated-noise"
     ],
     "verdict": "skip"
   },
