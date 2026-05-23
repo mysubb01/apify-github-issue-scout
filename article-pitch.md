@@ -12,6 +12,8 @@ This article shows how to build a small Crawlee-based scout that searches public
 
 Working demo repository: https://github.com/mysubb01/apify-github-issue-scout
 
+Portfolio page: https://mysubb01.github.io/apify-github-issue-scout/
+
 The repository is also Apify Actor-ready with `.actor/actor.json`, `.actor/input_schema.json`, `Dockerfile`, and a local `npm run actor:local` command.
 
 Full draft: https://github.com/mysubb01/apify-github-issue-scout/blob/main/article-draft.md
@@ -66,6 +68,9 @@ The article would show how to build a small Crawlee-based workflow that searches
 
 Working demo / Actor-ready repo:
 https://github.com/mysubb01/apify-github-issue-scout
+
+Portfolio page:
+https://mysubb01.github.io/apify-github-issue-scout/
 
 Full draft:
 https://github.com/mysubb01/apify-github-issue-scout/blob/main/article-draft.md
