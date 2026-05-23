@@ -5,7 +5,7 @@
 - Program: Apify Content Writing Program
 - Program page: https://apify.com/resources/write-for-apify
 - Intended channel: Apify Discord `#apify-writers`
-- Draft status: ready for editor/topic-fit review
+- Draft status: public working outline/sample available; final unpublished manuscript can be prepared in the requested editorial format
 - Payment status: not submitted, not accepted, not paid
 
 ## Copy-Ready Discord Message
@@ -19,11 +19,14 @@ Building a GitHub Issue Scout with Crawlee and Human-in-the-Loop Triage
 
 The article is based on a working TypeScript demo that searches public GitHub issues, extracts paid-work signals, flags risky bounty patterns, and writes a ranked shortlist for human review. The key angle is responsible automation: Crawlee collects and structures public data, but the final decision stays human-reviewed, with no auto-commenting or auto-claiming.
 
-Working repo:
+Working repo and code sample:
 https://github.com/mysubb01/apify-github-issue-scout
 
-Full draft:
+Public working outline/sample:
 https://github.com/mysubb01/apify-github-issue-scout/blob/main/article-draft.md
+
+Note on originality:
+The linked draft is a public working outline/sample for topic-fit review. If accepted, I can prepare a fresh unpublished final manuscript in the requested format and adapt the structure, title, examples, and framing to the active Call for Papers before publication review.
 
 Portfolio/case-study pages:
 https://mysubb01.github.io/apify-github-issue-scout/
@@ -136,6 +139,8 @@ storage/datasets/default/*.json
 ## Editor Notes
 
 - The draft intentionally avoids teaching spammy bounty automation.
+- The public `article-draft.md` should be treated as a topic-fit sample, not as the final publication manuscript.
+- If the topic is accepted, prepare a fresh unpublished final manuscript in the requested Apify editorial format before review.
 - The workflow only reads public issue metadata and keeps final decisions human-reviewed.
 - If the current Call for Papers prefers Playwright-heavy content, the article can add a final section that uses `PlaywrightCrawler` to inspect the top N issue pages after the first Crawlee/API pass.
 - If the current Call for Papers prefers Apify Actors, the article can emphasize the Actor adapter, input schema, dataset records, and key-value summary.

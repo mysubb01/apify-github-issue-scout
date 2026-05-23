@@ -121,6 +121,9 @@ https://github.com/mysubb01/apify-github-issue-scout/blob/main/APIFY_SUBMISSION_
 Full article draft:
 https://github.com/mysubb01/apify-github-issue-scout/blob/main/article-draft.md
 
+Note on originality:
+The linked draft is a public working outline/sample for topic-fit review. If this topic is accepted, I can prepare a fresh unpublished final manuscript in the requested editorial format and adapt the title, examples, and framing to the active Call for Papers.
+
 Actor-specific files:
 - src/actor.ts
 - .actor/actor.json
@@ -137,4 +140,4 @@ If the current CFP theme is more Crawlee-focused, I can frame it as a Crawlee de
 
 ## Status
 
-This alignment note is prepared for manual Discord submission. It has not been submitted, accepted, or paid.
+This alignment note is prepared for manual Discord submission. It has not been submitted, accepted, or paid. The public draft should be treated as a sample/outline; the final publication manuscript still needs to be prepared as an unpublished editorial draft after topic acceptance.
