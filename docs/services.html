@@ -185,6 +185,50 @@
         line-height: 1.55;
       }
 
+      .quote-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .quote {
+        display: flex;
+        min-height: 260px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .quote h3 {
+        margin: 0 0 10px;
+        font-size: 1.12rem;
+        letter-spacing: 0;
+      }
+
+      .quote p,
+      .quote li {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .quote p {
+        margin: 0;
+      }
+
+      .quote ul {
+        margin: 14px 0;
+        padding-left: 18px;
+      }
+
+      .quote .button {
+        justify-content: center;
+        margin-top: 16px;
+        text-align: center;
+      }
+
       .proof {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -219,6 +263,7 @@
 
       @media (max-width: 860px) {
         .grid,
+        .quote-grid,
         .proof {
           grid-template-columns: 1fr;
         }
@@ -319,6 +364,58 @@
             <strong>3. Delivery</strong>
             <span>Work is delivered with source files, commands, output evidence, and a short handoff note.</span>
           </div>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Quick start packages">
+        <div class="section-title">
+          <h2>Pick a starting scope</h2>
+          <p>
+            These are not checkout buttons. They open a public GitHub inquiry
+            with the right package title so the work can be scoped before any
+            payment details are discussed.
+          </p>
+        </div>
+        <div class="quote-grid">
+          <article class="quote">
+            <div>
+              <h3>Quick review sprint</h3>
+              <p>Best for a repo, issue queue, or workflow that needs an evidence-based outside read.</p>
+              <ul>
+                <li>Findings report</li>
+                <li>Priority and effort ranking</li>
+                <li>Optional small patch note</li>
+              </ul>
+              <div class="price">150-300 USD</div>
+            </div>
+            <a class="button" href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml&title=%5BPaid%20inquiry%5D%20Quick%20review%20sprint">Start review inquiry</a>
+          </article>
+          <article class="quote">
+            <div>
+              <h3>Article sprint</h3>
+              <p>Best for developer tools that need a practical tutorial backed by working code.</p>
+              <ul>
+                <li>Outline and draft</li>
+                <li>Runnable sample or repo</li>
+                <li>Verification notes</li>
+              </ul>
+              <div class="price">300-800 USD</div>
+            </div>
+            <a class="button" href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml&title=%5BPaid%20inquiry%5D%20Article%20sprint">Start article inquiry</a>
+          </article>
+          <article class="quote">
+            <div>
+              <h3>Actor prototype sprint</h3>
+              <p>Best for turning a public-data workflow into a Crawlee script or Apify Actor prototype.</p>
+              <ul>
+                <li>TypeScript implementation</li>
+                <li>Input schema and README</li>
+                <li>Sample output</li>
+              </ul>
+              <div class="price">400-1,200 USD</div>
+            </div>
+            <a class="button" href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml&title=%5BPaid%20inquiry%5D%20Actor%20prototype%20sprint">Start Actor inquiry</a>
+          </article>
         </div>
       </section>
 

@@ -9,6 +9,17 @@ body:
       value: |
         Thanks for reaching out. Please avoid posting secrets, API keys, private customer data, or payment credentials here.
   - type: dropdown
+    id: package
+    attributes:
+      label: Starting package
+      options:
+        - Quick review sprint (150-300 USD)
+        - Article sprint (300-800 USD)
+        - Actor prototype sprint (400-1,200 USD)
+        - Custom scope
+    validations:
+      required: true
+  - type: dropdown
     id: work_type
     attributes:
       label: Work type
