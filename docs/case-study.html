@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Study: GitHub Issue Scout</title>
+    <meta
+      name="description"
+      content="A buyer-facing case study for the GitHub Issue Scout Crawlee and Apify Actor demo."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #171717;
+        --muted: #5f6368;
+        --line: #d9ddd3;
+        --paper: #f7f8f3;
+        --panel: #ffffff;
+        --green: #126b4f;
+        --teal: #0b6d7a;
+        --gold: #a76100;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      main {
+        min-height: 100vh;
+      }
+
+      .hero,
+      .band {
+        padding: clamp(28px, 6vw, 76px);
+      }
+
+      .hero {
+        border-bottom: 1px solid var(--line);
+        background:
+          linear-gradient(90deg, rgba(247, 248, 243, 0.96), rgba(247, 248, 243, 0.76)),
+          repeating-linear-gradient(135deg, #e2e7dc 0, #e2e7dc 1px, transparent 1px, transparent 18px);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--green);
+        font-size: 0.84rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 980px;
+        margin: 0;
+        font-size: clamp(2.2rem, 6vw, 5.2rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 760px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(1.02rem, 2vw, 1.25rem);
+        line-height: 1.56;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 15px;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        background: var(--ink);
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .metric,
+      .panel {
+        background: var(--panel);
+      }
+
+      .metric {
+        min-height: 130px;
+        padding: 22px;
+      }
+
+      .metric strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--green);
+        font-size: 1.5rem;
+      }
+
+      .metric span {
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        gap: 22px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 24px;
+      }
+
+      .panel h2,
+      .panel h3 {
+        margin: 0 0 12px;
+        letter-spacing: 0;
+      }
+
+      .panel p,
+      .panel li {
+        color: var(--muted);
+        line-height: 1.58;
+      }
+
+      .panel p {
+        margin: 0 0 14px;
+      }
+
+      .panel ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .step {
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr);
+        gap: 18px;
+        padding: 18px 20px;
+        background: var(--panel);
+      }
+
+      .step strong {
+        color: var(--teal);
+      }
+
+      .step span {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      footer {
+        padding: 28px clamp(28px, 6vw, 76px);
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 860px) {
+        .summary,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .step {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Case Study</p>
+        <h1>Turning a noisy paid-work search into a reviewable automation asset</h1>
+        <p class="lede">
+          GitHub Issue Scout started as a real operational problem: public
+          bounty searches looked profitable, but many leads were stale,
+          crowded, maintainer-only, or unsafe to touch. The result is a
+          working Crawlee project, an Apify Actor adapter, and reusable
+          technical writing collateral.
+        </p>
+        <div class="actions">
+          <a class="button" href="./services.html">Request similar work</a>
+          <a class="button secondary" href="https://github.com/mysubb01/apify-github-issue-scout">View repository</a>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Project metrics">
+        <div class="summary">
+          <div class="metric">
+            <strong>TypeScript</strong>
+            <span>Crawlee workflow with typed lead scoring and JSON output.</span>
+          </div>
+          <div class="metric">
+            <strong>Actor-ready</strong>
+            <span>Apify adapter, input schema, Dockerfile, and local Actor run path.</span>
+          </div>
+          <div class="metric">
+            <strong>Public proof</strong>
+            <span>Release, article draft, pitch, portfolio page, and service intake.</span>
+          </div>
+          <div class="metric">
+            <strong>Verified</strong>
+            <span>Build, demo, local Actor run, Pages deploy, and HTTP checks.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="two-col">
+          <article class="panel">
+            <h2>Problem</h2>
+            <p>
+              Paid open-source work can look simple from a search result, but
+              the real cost is choosing the wrong issue. A lead may already be
+              crowded, reserved, blocked by maintainers, or full of low-quality
+              attempts.
+            </p>
+            <p>
+              The needed output was not an auto-claimer. It was a safer triage
+              artifact that keeps risky decisions human-reviewed.
+            </p>
+          </article>
+          <article class="panel">
+            <h2>Deliverables</h2>
+            <ul>
+              <li>Working Crawlee scout with GitHub issue search queries.</li>
+              <li>Lead model with score, reward signal, positive signals, risk signals, and verdict.</li>
+              <li>Apify Actor adapter with input schema and key-value/dataset output.</li>
+              <li>Full article draft, pitch, portfolio page, and paid-service intake flow.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Delivery timeline">
+        <div class="timeline">
+          <div class="step">
+            <strong>1. Research</strong>
+            <span>Checked public bounty channels, filtered stale or blocked opportunities, and identified the need for safer lead scoring.</span>
+          </div>
+          <div class="step">
+            <strong>2. Build</strong>
+            <span>Implemented the TypeScript Crawlee demo, generated sample output, and packaged it as a local Apify Actor workflow.</span>
+          </div>
+          <div class="step">
+            <strong>3. Publish</strong>
+            <span>Made the repo public, added release metadata, wrote the article draft and pitch, and deployed a portfolio page.</span>
+          </div>
+          <div class="step">
+            <strong>4. Convert</strong>
+            <span>Added paid-service packages and GitHub issue intake so the same proof asset can support future paid inquiries.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="two-col">
+          <article class="panel">
+            <h2>Similar work this supports</h2>
+            <ul>
+              <li>Developer-tool tutorials backed by runnable repos.</li>
+              <li>Crawlee or Apify Actor prototypes for public-data workflows.</li>
+              <li>GitHub workflow audits, issue triage systems, and repo automation.</li>
+              <li>Evidence-based review reports for engineering teams.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h2>Buyer takeaway</h2>
+            <p>
+              The useful part is not just the code. It is the packaged outcome:
+              a clear problem, working artifact, public proof, verification
+              trail, and a reusable story that can be handed to editors,
+              customers, or maintainers.
+            </p>
+            <a class="button" href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml&title=%5BPaid%20inquiry%5D%20Similar%20automation%20or%20article%20project">Start a similar inquiry</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Public inquiries only. Do not include secrets, private customer data,
+      credentials, or payment information in GitHub issues.
+    </footer>
+  </body>
+</html>
