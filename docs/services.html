@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paid Developer Content and Automation Services</title>
+    <meta
+      name="description"
+      content="Paid technical writing, Crawlee and Apify Actor builds, GitHub automation, and evidence-based developer workflow reviews."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #171717;
+        --muted: #5f6368;
+        --line: #d9ddd3;
+        --paper: #f7f8f3;
+        --panel: #ffffff;
+        --green: #126b4f;
+        --teal: #0b6d7a;
+        --gold: #a76100;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .hero,
+      .band {
+        padding: clamp(28px, 6vw, 76px);
+      }
+
+      .hero {
+        min-height: 72vh;
+        display: grid;
+        align-content: center;
+        border-bottom: 1px solid var(--line);
+        background:
+          linear-gradient(90deg, rgba(247, 248, 243, 0.96), rgba(247, 248, 243, 0.76)),
+          repeating-linear-gradient(135deg, #e2e7dc 0, #e2e7dc 1px, transparent 1px, transparent 18px);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--green);
+        font-size: 0.84rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 980px;
+        margin: 0;
+        font-size: clamp(2.2rem, 6vw, 5.2rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 760px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(1.02rem, 2vw, 1.28rem);
+        line-height: 1.56;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 11px 15px;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        background: var(--ink);
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .section-title {
+        max-width: 760px;
+        margin: 0 0 22px;
+      }
+
+      .section-title h2 {
+        margin: 0 0 10px;
+        font-size: clamp(1.6rem, 3vw, 2.35rem);
+        letter-spacing: 0;
+      }
+
+      .section-title p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .cell {
+        min-height: 230px;
+        padding: 24px;
+        background: var(--panel);
+      }
+
+      .cell h3 {
+        margin: 0 0 12px;
+        font-size: 1.08rem;
+        letter-spacing: 0;
+      }
+
+      .cell p,
+      .cell li {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .cell p {
+        margin: 0;
+      }
+
+      .cell ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+      }
+
+      .price {
+        margin-top: 14px;
+        color: var(--green);
+        font-weight: 900;
+      }
+
+      .process {
+        display: grid;
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .step {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 18px;
+        padding: 18px 20px;
+        background: var(--panel);
+      }
+
+      .step strong {
+        color: var(--green);
+      }
+
+      .step span {
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .proof {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .proof a {
+        min-height: 110px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        text-decoration: none;
+      }
+
+      .proof strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--teal);
+      }
+
+      .proof span {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      footer {
+        padding: 28px clamp(28px, 6vw, 76px);
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 860px) {
+        .grid,
+        .proof {
+          grid-template-columns: 1fr;
+        }
+
+        .step {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Paid Developer Services</p>
+        <h1>Technical writing and automation backed by working code</h1>
+        <p class="lede">
+          Practical developer content, Crawlee and Apify Actor builds, GitHub
+          workflow automation, and evidence-based review reports. The sample
+          project on this site shows the expected style: real code, clear
+          tradeoffs, and reproducible verification.
+        </p>
+        <div class="actions" aria-label="Service actions">
+          <a class="button" href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml">Start a paid inquiry</a>
+          <a class="button secondary" href="./">View sample project</a>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Services">
+        <div class="section-title">
+          <h2>What can be delivered</h2>
+          <p>
+            Small, concrete engagements work best. Each package includes a
+            scoped deliverable, source links, and verification notes.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="cell">
+            <h3>Technical Article Package</h3>
+            <p>
+              A practical tutorial or product article with runnable code,
+              screenshots or output evidence, and an editor-ready outline.
+            </p>
+            <ul>
+              <li>1,200-2,000 word draft</li>
+              <li>Working repo or code sample</li>
+              <li>Verification commands</li>
+            </ul>
+            <div class="price">Typical scope: 300-800 USD</div>
+          </article>
+          <article class="cell">
+            <h3>Crawlee / Apify Actor Build</h3>
+            <p>
+              A focused Actor or crawler prototype that turns public data into
+              structured output for review or downstream workflows.
+            </p>
+            <ul>
+              <li>TypeScript implementation</li>
+              <li>Input schema and README</li>
+              <li>Sample output artifact</li>
+            </ul>
+            <div class="price">Typical scope: 400-1,200 USD</div>
+          </article>
+          <article class="cell">
+            <h3>GitHub Workflow Review</h3>
+            <p>
+              A concise audit of a repo, issue queue, automation workflow, or
+              contributor path with prioritized fixes and evidence.
+            </p>
+            <ul>
+              <li>Findings report</li>
+              <li>Risk and effort ranking</li>
+              <li>Optional small patch</li>
+            </ul>
+            <div class="price">Typical scope: 150-500 USD</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Process">
+        <div class="section-title">
+          <h2>How the work starts</h2>
+          <p>
+            The intake issue captures enough context to decide whether the work
+            is real, scoped, and safe to take.
+          </p>
+        </div>
+        <div class="process">
+          <div class="step">
+            <strong>1. Scope</strong>
+            <span>Open a paid inquiry with the goal, links, expected deliverables, timeline, and rough budget range.</span>
+          </div>
+          <div class="step">
+            <strong>2. Fit Check</strong>
+            <span>The request is checked for feasibility, data safety, timeline, and whether a working artifact can be verified.</span>
+          </div>
+          <div class="step">
+            <strong>3. Delivery</strong>
+            <span>Work is delivered with source files, commands, output evidence, and a short handoff note.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Proof">
+        <div class="section-title">
+          <h2>Proof of style</h2>
+          <p>
+            These public artifacts show the expected quality bar for future paid
+            work.
+          </p>
+        </div>
+        <div class="proof">
+          <a href="https://github.com/mysubb01/apify-github-issue-scout">
+            <strong>Working TypeScript repo</strong>
+            <span>Crawlee scout, Apify Actor adapter, input schema, Dockerfile, and sample output.</span>
+          </a>
+          <a href="https://github.com/mysubb01/apify-github-issue-scout/blob/main/article-draft.md">
+            <strong>Long-form article draft</strong>
+            <span>Build tutorial for GitHub issue scouting and human-in-the-loop triage.</span>
+          </a>
+          <a href="https://github.com/mysubb01/apify-github-issue-scout/releases/tag/v0.1.0">
+            <strong>Published release</strong>
+            <span>A stable public milestone for editors or prospects to inspect.</span>
+          </a>
+          <a href="https://github.com/mysubb01/apify-github-issue-scout/issues/new?template=paid-work-inquiry.yml">
+            <strong>Paid inquiry form</strong>
+            <span>Structured GitHub issue template for scoped paid-work requests.</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Public inquiries only. Do not include secrets, credentials, private user
+      data, or payment information in GitHub issues.
+    </footer>
+  </body>
+</html>

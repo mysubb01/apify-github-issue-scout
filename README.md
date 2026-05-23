@@ -9,6 +9,7 @@ It was built as a working-code companion for an Apify/Crawlee technical article 
 Related writing assets:
 
 - [Portfolio page](https://mysubb01.github.io/apify-github-issue-scout/)
+- [Paid services](https://mysubb01.github.io/apify-github-issue-scout/services.html)
 - [Article draft](./article-draft.md)
 - [Article pitch](./article-pitch.md)
 
